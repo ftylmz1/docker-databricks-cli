@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  databricks-base:
+    build: 
+      context: .
+    image: docker-databricks-cli
+    env_file:
+     - env/private.env
+    volumes:
+      - ./data:/data
+
+
+
+ 
