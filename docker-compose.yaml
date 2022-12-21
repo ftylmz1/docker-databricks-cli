@@ -5,7 +5,7 @@ services:
       context: .
     image: docker-databricks-cli
     env_file:
-     - env/private.env
+     - env/private_terraform.env
     volumes:
       - ./data:/data
 
